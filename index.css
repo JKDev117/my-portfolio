@@ -1,93 +1,246 @@
 * {
     box-sizing: border-box;
 }
-/* ____________________________________________ */
+
+body {
+    margin: 0;
+}
+
+/* Fonts ____________________________________________ */
+
+header, h1, h2, h3 {
+    font-family: 'Days One', sans-serif;
+}
+
+p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 17px; /* 16px-20px paragraph text */
+    line-height: 25.5px; /* 120-150% of font-size */
+    text-align: left;
+}
+
+nav, a {
+    font-family: 'Kanit', sans-serif;
+}
+
+/* Navbar ____________________________________________ */
 
 nav {
-    background-color: gray;
     position: fixed;
     width: 100%;
     top: 0;
-    color: white;
 }
 
-nav > div >p {
-    position: absolute;
-    left: 45%;
-}
+/* Navbar (top bar) ____________________________________________ */
 
-nav > div:first-child {
+.top-bar {
     background-color: black;
-    height: 6vh;
+    min-height: 7vh;
+    overflow: hidden;
 }
 
-nav > div > div {
-    background-color: gray;
-    width: 38px;
-    height: 33px;
+#JK {
     position: absolute;
-    top: 6px;
-    right: 8px;
+    font-size: 2.2em;
+    margin-top: 15px;
+    margin-left: -10%;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    width: 20%;
+    left: 50%;
 }
 
-nav > div:nth-child(2) {
-    height: 5vh;
+#JK:hover {
+    text-decoration: underline;
 }
 
-ul {
+.burgericon {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    right: 18px;
+    top: 7px;
+    cursor: pointer;
+    border: 1px solid rgb(100, 93, 93, 0.8);
+    padding: 6px 6px 7px;
+    border-radius: 2px;
+    width: 43px;
+}
+
+.burger-line {
+    width: 23px;
+    height: 2px;
+    background-color: white;
+    margin: 2px 0px;
+    transition: 0.3s;
+    border-radius: 1px;
+}
+
+.change .burger-line1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 4px);
+    transform: rotate(-45deg) translate(-6px, 4px);
+}
+  
+.change .burger-line2 {opacity: 0;}
+
+.change .burger-line3 {
+-webkit-transform: rotate(45deg) translate(-4px, -3px);
+transform: rotate(45deg) translate(-4px, -3px);
+}
+
+#aboutMeClick:hover{
+    color: beige;
+}
+
+/* Navbar (bottom bar) ____________________________________________ */
+
+#navLinks {
+    min-height: 5vh;
+    background-color: gray;
+    overflow: hidden;
+}
+
+nav ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
-    margin-top: 8px;
-    color: black;
-}
-
-li {
-    position: relative;
-    right: 3vh; 
-}
-
-/* ____________________________________________ */
-
-body {
-    font-family: "Open Sans", sans-serif;
-    margin: 0;
- }
-
-
-
-main {
-    margin-top: 15vh;
+    margin-top: 14px; 
     text-align: center;
 }
 
+nav li {
+    position: relative;
+    right: 3vh;
+    font-size: 16px; /* navigation links 12-16px */
+}
+
+nav a {
+    font-size: 16px;
+}
+
+#navLinks a:link {
+    text-decoration: none;
+    color: black;
+}
+
+#navLinks a:visited {
+    color: black;
+}
+
+#navLinks a:hover {
+    color: beige !important;
+}
+
+
+/* Main ____________________________________________ */
+
+main {
+    text-align: center;
+}
+
+/* Header ____________________________________________ */
+
 header {
-    padding: 10px 10px 20px 10px;
+    padding: 20vh 25px;
 } 
 
+header > h1 {
+    font-size: 3em;
+}
+
+/* Sections Overall ____________________________________________ */
+
+h2 {
+    font-size: 1.9em;
+}
+
 section {
-    background-color: rgb(180, 179, 179);
-    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 0;
 }
 
-section:nth-child(odd) {
+
+/* About Me ____________________________________________ */
+
+#aboutMe {
+    padding-top: 13vh;
     background-color: rgb(224, 224, 224);
-
+    padding-bottom: 5em;
+    height: 100%;
 }
 
-section > ul {
+
+/* My Projects ____________________________________________ */
+
+
+#myProjects {
+    background-color: rgb(204, 201, 201);
+    padding-top: 13vh;
+    padding-bottom: 5em;
+    height: 100%;
+}
+
+.center-tags {
+    text-align: center;
+}
+
+.span-underlined {
+    text-decoration: underline;
+}
+
+.screenshots { /* images */
+    height: 200px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.screenshots:hover{
+    border: 3px solid rgb(100, 9, 9);
+}
+
+#myProjects > a { /* Live Link & Repo */
+    display: inline-block;
+    margin: 15px 25px;
+    width: 69px;
+    padding: 0;
+    font-size: 16px;
+}
+
+#myProjects > a + a{ /* Repo */
+    width: 40px;
+}
+
+/* Contact Me ____________________________________________ */
+
+#contactMe {
+    background-color: rgb(187, 187, 187);
+    padding-top: 13vh;
+    padding-bottom: 5em;
+    height: 100vh;
+}
+
+#contactMe > a {
     display: block;
+    font-size: 17px;
+    width: 70px;
+    margin: 2.5em auto;
+    padding: 0;
 }
 
-a {
-    padding: 5px;
-}
+/* Footer ____________________________________________ */
 
 footer {
     background-color: black;
     color: white;
     text-align: center;
     padding: 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    font-size: small;
 }
 
 
