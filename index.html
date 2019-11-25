@@ -5,70 +5,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Days+One|Kanit|Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <link rel="stylesheet" href="media.css" type="text/css">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <nav role="navigation">
-        <div>
-            <p>Nav</p>
-            <div></div>
+        <div class="top-bar">
+            <p id="JK">JK</p>    
+            <div class="burgericon">
+                <div class="burger-line1 burger-line"></div>
+                <div class="burger-line2 burger-line"></div>
+                <div class="burger-line3 burger-line"></div>
+            </div>    
         </div>
-        <div>
+
+        <div id="navLinks">
             <ul>
-                <li>About Me</li>
-                <li>My Projects</li>
-                <li>Contact Me</li>
+                <li ><a id="aboutMeClick" href="#aboutMe">About Me</a></li>
+                <li ><a id="myProjectsClick" href="#myProjects">My Projects</a></li>
+                <li ><a id="contactMeClick" href="#contactMe">Contact Me</a></li>          
             </ul>
         <div>
     </nav>
     
     <main role="main">
-        <header>
-            <h1> &lt Hi/ ></h1>
-            <p>I'm Jae, an aspiring full-stack developer.</p>
-        </header>
+            <header role="banner">
+                <h1> &lt Hi/ ></h1>
+                <p>I'm Jae, an aspiring full-stack developer from Atlanta, GA. My interests include
+                    web app development, music, food, learning, and traveling. I am looking forward to
+                    see where my all hard work and passions will take me in the future.
+                </p>
+            </header>
 
-        <section>
-            <h2> &lt About Me ></h2>
-            <p>I graduated from Georgia State University with a Bachelor's degree in Computer Science. I am currently enrolled in Thinkful's
-            Engineering Flex program to complement the knowledge I gained from my undergraduate degree with the technical skills
-            necessary to become more competent as a full-stack developer when I complete the program.</p>
-            
-            <p>What attracted me to full-stack development is that it stimulates both my logical and creative side of my brain. The logical
-            side consisting of being able to break down a problem logically and then coming up with an algorithm to solve the problem. And
-            the creative side of once creating a program, coming up with ways of how I can bring it to life and make it look nice 
-            and user-friendly for the end-user.</p>
-            <a href="#">LinkedIn</a>    
-        </section>
+            <section id="aboutMe">
+                <h2> &lt About Me ></h2>
+                <p>I graduated from Georgia State University with a Bachelor's degree in Computer Science. I am currently enrolled in Thinkful's
+                Engineering Flex program to complement the knowledge I gained from my undergraduate studies with the technical skills
+                necessary to become more competent as a full-stack developer and as a valuable team member for the future company I work for 
+                after I complete my program.</p>
+                
+                <p>What attracted me to full-stack development is that it stimulates both my logical and creative side of my brain. The logical
+                side consisting of being able to break down a problem logically, and then coming up with an algorithm to solve the problem. And
+                the creative side of once creating a program, coming up with ways of how I can bring it to life, and make it look nice 
+                and user-friendly for the end-user.</p>
+
+                <p>When I'm not busy coding, I'm usually enjoying movies, listening to music, checking out new restaurants,
+                reading a good book, or visiting places I've never been to before to broaden my horizons. 
+                </p>
+            </section>
         
-        <section>
-            <h2> &lt My Projects ></h3>
-            <h3>Game of Thrones Quiz App</h3>
-            <p>Description: A quiz app that tests a person's knowledge of the popular TV show Game of Thrones.</p>
-            <p>Technologies Used:</p>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>jQuery</li>
-            </ul>    
-            <a href="#">Live Link</a>
-            <a href="#">Repo</a>    
-            <a href="#">Git Hub</a>    
-    
-        </section>            
+            <section id="myProjects">
+                <h2>&lt My Projects ></h3>
+                <h3>Game of Thrones Quiz App</h3>
+                <p><span class="span-underlined">Description</span>: A quiz app that tests a person's knowledge of the popular TV series, Game of Thrones, 
+                with a series of questions. This app was built as part of an assignment at Thinkful. 
+                It is my very first web app.
+                </p>
+                <p class="center-tags"><span class="span-underlined">Technologies Used</span>:</p>
+                <div>
+                    <img src="logos/html5.png" alt="html5" />
+                    <img src="logos/css.png" alt="css" />
+                    <img src="logos/javascript.png" alt="javascript" />
+                    <img src="logos/jquery.png" alt="jquery" />
+                </div>
+                <div>
+                    <p class="center-tags"><span class="span-underlined">Screenshots</span>:</p>
+                    <img src="screenshots/landing-page.png" alt="landing-page" class="screenshots"/>
+                    <img src="screenshots/qna-page.png" alt="landing-page" class="screenshots"/>
+                    <img src="screenshots/feedback-page.png" alt="feedback-page" class="screenshots"/>
+                </div>        
+                <a href="https://jck117.github.io/8.9-Assignment/"><span>Live Link</span></a>
+                <a href="https://github.com/jck117/8.9-Assignment">Repo</a>   
+            </section>            
 
-        <section>
-                <h2> &lt Contact Me ></h3>
-                <a href="#">E-mail</a>    
-        </section>
+            <section id="contactMe">
+                    <h2> &lt Contact Me ></h3>
+                    <a href="mailto:jckim81@yahoo.com" target="_blank">E-mail</a>
+                    <a href="https://www.linkedin.com/in/jae-kim-6b73a525">LinkedIn</a>
+                    <a href="https://github.com/jck117">Git Hub</a>        
+            </section>
     </main>
 
-    <footer>Footer</footer>
+    <footer role="content info">&#169; JK2019</footer>
 
+    <script src="index.js"></script>
 </body>
+
 
 </html>
 

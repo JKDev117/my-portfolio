@@ -1,0 +1,73 @@
+@media screen and (min-width: 414px) { /* iPhone 6/7/8 Plus */
+    #aboutMe, #myProjects {
+        min-height: 100vh;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) { /* iPad (vertical) */
+    nav a {
+        font-size: 20px;
+    }
+
+}
+
+
+@media screen and (min-width: 1024px) { /* iPad (horizontal) */
+    p {
+        font-size: 18px; /* 16px-20px paragraph text */
+        line-height: 27px; /* 120-150% of font-size */
+    }
+
+    #myProjects > a { /* Live Link & Repo */
+        width: 80px;
+        font-size: 17px;
+    }
+    
+    #myProjects > a + a{ /* Repo */
+        width: 42px;
+    }
+    
+
+
+}
+
+
+@media screen and (min-width: 1280px) { /* MacBook Pro 13'*/
+    nav {
+        width: 25%;
+    }
+  
+    .burgericon {
+        visibility: hidden;
+        display: none;
+    }
+
+    #JK {
+        font-size: 3em;
+        width: 40%;
+        margin-left: -20%;
+    }
+
+    #navLinks {
+        height: 100vh;
+    }
+
+    nav ul {
+        flex-direction: column;
+        height: 50%;
+        justify-content: space-evenly;        
+    }
+
+    nav a {
+        font-size: 28px;
+    }
+
+    main {
+        padding-left: 25%;
+    }
+
+}
+
+
