@@ -1,16 +1,7 @@
-@media screen and (min-width: 414px) { /* iPhone 6/7/8 Plus */
-    #aboutMe, #myProjects {
-        min-height: 100vh;
-    }
-
-}
-
-
 @media screen and (min-width: 768px) { /* iPad (vertical) */
     nav a {
         font-size: 20px;
     }
-
 }
 
 
@@ -29,8 +20,6 @@
         width: 42px;
     }
     
-
-
 }
 
 
@@ -67,7 +56,9 @@
     main {
         padding-left: 25%;
     }
-
 }
+
+
+
 
 

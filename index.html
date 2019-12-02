@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Portfolio Wireframe</title>
+    <title>Jae Kim | Web Developer</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Days+One|Kanit|Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Days+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css" type="text/css">
     <link rel="stylesheet" href="media.css" type="text/css">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
@@ -15,7 +17,7 @@
 <body>
     <nav role="navigation">
         <div class="top-bar">
-            <p id="JK">JK</p>    
+            <a id="JK" href="#top">JK</a>    
             <div class="burgericon">
                 <div class="burger-line1 burger-line"></div>
                 <div class="burger-line2 burger-line"></div>
@@ -29,24 +31,26 @@
                 <li ><a id="myProjectsClick" href="#myProjects">My Projects</a></li>
                 <li ><a id="contactMeClick" href="#contactMe">Contact Me</a></li>          
             </ul>
-        <div>
+        </div>
     </nav>
     
     <main role="main">
-            <header role="banner">
-                <h1> &lt Hi/ ></h1>
+            <header role="banner" id="top">
+                <h1>&lt; Hi/ ></h1>
+                <img src="pictures/atlanta.png" alt="atlanta" />
                 <p>I'm Jae, an aspiring full-stack developer from Atlanta, GA. My interests include
                     web app development, music, food, learning, and traveling. I am looking forward to
-                    see where my all hard work and passions will take me in the future.
+                    see where all my hard work and passions will take me in the future.
                 </p>
+
             </header>
 
             <section id="aboutMe">
-                <h2> &lt About Me ></h2>
+                <h2> &lt; About Me ></h2>
                 <p>I graduated from Georgia State University with a Bachelor's degree in Computer Science. I am currently enrolled in Thinkful's
                 Engineering Flex program to complement the knowledge I gained from my undergraduate studies with the technical skills
-                necessary to become more competent as a full-stack developer and as a valuable team member for the future company I work for 
-                after I complete my program.</p>
+                necessary to become more competent as a full-stack developer. After I complete my program, I hope I can work on a team 
+                with great programmers and contribute as valuable team member for the future company I work for.</p>
                 
                 <p>What attracted me to full-stack development is that it stimulates both my logical and creative side of my brain. The logical
                 side consisting of being able to break down a problem logically, and then coming up with an algorithm to solve the problem. And
@@ -59,7 +63,7 @@
             </section>
         
             <section id="myProjects">
-                <h2>&lt My Projects ></h3>
+                <h2>&lt; My Projects ></h2>
                 <h3>Game of Thrones Quiz App</h3>
                 <p><span class="span-underlined">Description</span>: A quiz app that tests a person's knowledge of the popular TV series, Game of Thrones, 
                 with a series of questions. This app was built as part of an assignment at Thinkful. 
@@ -74,23 +78,23 @@
                 </div>
                 <div>
                     <p class="center-tags"><span class="span-underlined">Screenshots</span>:</p>
-                    <img src="screenshots/landing-page.png" alt="landing-page" class="screenshots"/>
-                    <img src="screenshots/qna-page.png" alt="landing-page" class="screenshots"/>
-                    <img src="screenshots/feedback-page.png" alt="feedback-page" class="screenshots"/>
+                    <a href="screenshots/landing-page.png" target="_blank"><img src="screenshots/landing-page.png" alt="landing-page" class="screenshots"/></a>
+                    <a href="screenshots/qna-page.png" target="_blank"><img src="screenshots/qna-page.png" alt="landing-page" class="screenshots"/></a>
+                    <a href="screenshots/feedback-page.png" target="_blank"><img src="screenshots/feedback-page.png" alt="feedback-page" class="screenshots"/></a>
                 </div>        
-                <a href="https://jck117.github.io/8.9-Assignment/"><span>Live Link</span></a>
-                <a href="https://github.com/jck117/8.9-Assignment">Repo</a>   
+                <a href="https://jck117.github.io/8.9-Assignment/" target="_blank"><span>Live Link</span></a>
+                <a href="https://github.com/jck117/8.9-Assignment" target="_blank">Repo</a>   
             </section>            
 
             <section id="contactMe">
-                    <h2> &lt Contact Me ></h3>
+                    <h2> &lt; Contact Me ></h2>
                     <a href="mailto:jckim81@yahoo.com" target="_blank">E-mail</a>
-                    <a href="https://www.linkedin.com/in/jae-kim-6b73a525">LinkedIn</a>
-                    <a href="https://github.com/jck117">Git Hub</a>        
+                    <a href="https://www.linkedin.com/in/jae-kim-6b73a525" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/jck117" target="_blank">Git Hub</a>        
             </section>
     </main>
 
-    <footer role="content info">&#169; JK2019</footer>
+    <footer>&#169; JK2019</footer>
 
     <script src="index.js"></script>
 </body>

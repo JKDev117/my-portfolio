@@ -1,9 +1,9 @@
- function listenForClick(){   
-    $('.burgericon').click(function(event){
+function listenForClick(){   
+    $('.burgericon').click(function(){
         $(this).toggleClass("change");
         $('#navLinks').toggle(300);
     });
-
+/*
     $('#JK').click(function(){
         $('header').show();
         $('#contactMe').hide();
@@ -31,13 +31,16 @@
         $('#myProjects').hide();
         $('#aboutMe').hide();
     });
+*/ 
 };
-    
+   
 
 function start(){
+    /*
     $('#aboutMe').hide();
     $('#myProjects').hide();
     $('#contactMe').hide();
+    */
     //$('.burgericon').toggleClass("change");
     listenForClick();
 }

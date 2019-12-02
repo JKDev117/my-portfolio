@@ -1,9 +1,32 @@
+/* Color Theme Swatches in Hex */
+.My-Color-Theme-1-hex { color: #737A80; }
+.My-Color-Theme-2-hex { color: #99D3FF; }
+.My-Color-Theme-3-hex { color: #E6F4FF; }
+.My-Color-Theme-4-hex { color: #416785; }
+.My-Color-Theme-5-hex { color: #B8C3CC; }
+
+/* Color Theme Swatches in RGBA */
+.My-Color-Theme-1-rgba { color: rgba(115, 122, 128, 1); }
+.My-Color-Theme-2-rgba { color: rgba(153, 211, 255, 1); }
+.My-Color-Theme-3-rgba { color: rgba(230, 244, 255, 1); }
+.My-Color-Theme-4-rgba { color: rgba(65, 103, 133, 1); }
+.My-Color-Theme-5-rgba { color: rgba(184, 195, 204, 1); }
+
+/* Color Theme Swatches in HSLA */
+.My-Color-Theme-1-hsla { color: hsla(207, 5, 47, 1); }
+.My-Color-Theme-2-hsla { color: hsla(205, 100, 80, 1); }
+.My-Color-Theme-3-hsla { color: hsla(206, 100, 95, 1); }
+.My-Color-Theme-4-hsla { color: hsla(206, 34, 38, 1); }
+.My-Color-Theme-5-hsla { color: hsla(207, 16, 76, 1); }
+
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
+    background-color:#E6F4FF;
 }
 
 /* Fonts ____________________________________________ */
@@ -34,22 +57,25 @@ nav {
 /* Navbar (top bar) ____________________________________________ */
 
 .top-bar {
-    background-color: black;
+    background-color: #416785;
     min-height: 7vh;
     overflow: hidden;
+    width: 100%;
 }
 
 #JK {
     position: absolute;
     font-size: 2.2em;
     margin-top: 15px;
-    margin-left: -10%;
     color: white;
     text-align: center;
     cursor: pointer;
     width: 20%;
     left: 50%;
+    margin-left: -10%;
+    text-decoration: none;
 }
+
 
 #JK:hover {
     text-decoration: underline;
@@ -63,7 +89,7 @@ nav {
     right: 18px;
     top: 7px;
     cursor: pointer;
-    border: 1px solid rgb(100, 93, 93, 0.8);
+    border: 1px solid rgb(230, 244, 255, 0.8);
     padding: 6px 6px 7px;
     border-radius: 2px;
     width: 43px;
@@ -98,7 +124,7 @@ transform: rotate(45deg) translate(-4px, -3px);
 
 #navLinks {
     min-height: 5vh;
-    background-color: gray;
+    background-color:#737A80;
     overflow: hidden;
 }
 
@@ -122,15 +148,15 @@ nav a {
 
 #navLinks a:link {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 #navLinks a:visited {
-    color: black;
+    color: white;
 }
 
 #navLinks a:hover {
-    color: beige !important;
+    color: #99D3FF;
 }
 
 
@@ -143,12 +169,18 @@ main {
 /* Header ____________________________________________ */
 
 header {
-    padding: 20vh 25px;
+    padding: 12vh 25px 0vh;
 } 
 
 header > h1 {
     font-size: 3em;
 }
+
+header > img {
+    width: 30%;
+    min-width: 250px;
+}
+
 
 /* Sections Overall ____________________________________________ */
 
@@ -167,9 +199,7 @@ section {
 
 #aboutMe {
     padding-top: 13vh;
-    background-color: rgb(224, 224, 224);
     padding-bottom: 5em;
-    height: 100%;
 }
 
 
@@ -177,10 +207,10 @@ section {
 
 
 #myProjects {
-    background-color: rgb(204, 201, 201);
     padding-top: 13vh;
     padding-bottom: 5em;
     height: 100%;
+    background-color: #99D3FF;
 }
 
 .center-tags {
@@ -216,10 +246,10 @@ section {
 /* Contact Me ____________________________________________ */
 
 #contactMe {
-    background-color: rgb(187, 187, 187);
     padding-top: 13vh;
     padding-bottom: 5em;
     height: 100vh;
+    background-color: #B8C3CC;
 }
 
 #contactMe > a {
