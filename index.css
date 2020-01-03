@@ -213,6 +213,11 @@ section {
     background-color: #99D3FF;
 }
 
+h3 {
+    color: #416785;
+    font-size: 1.3em;
+}
+
 .center-tags {
     text-align: center;
 }
@@ -227,11 +232,15 @@ section {
     cursor: pointer;
 }
 
-.screenshots:hover{
+#screenshots-proj1:hover{
     border: 3px solid rgb(100, 9, 9);
 }
 
-#myProjects > a { /* Live Link & Repo */
+#screenshots-proj2:hover{
+    border: 3px solid rgb(181, 226, 240);
+}
+
+.projects > a { /* Live Link & Repo */
     display: inline-block;
     margin: 15px 25px;
     width: 69px;
@@ -239,7 +248,7 @@ section {
     font-size: 16px;
 }
 
-#myProjects > a + a{ /* Repo */
+.projects > a + a{ /* Repo */
     width: 40px;
 }
 
