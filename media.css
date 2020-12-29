@@ -1,3 +1,12 @@
+@media screen and (min-width: 542px) {
+    .projects > a {
+        display: inline;
+        position: relative;
+        top: 10px;
+    }
+}
+
+
 @media screen and (min-width: 768px) { /* iPad (vertical) */
     nav a {
         font-size: 20px;

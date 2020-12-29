@@ -239,16 +239,14 @@ h3 {
     border: 3px solid rgb(181, 226, 240);
 }
 
-.projects > a { /* Live Link & Repo */
-    display: inline-block;
-    margin: 15px 25px;
-    width: 69px;
-    padding: 0;
-    font-size: 16px;
+.projects {
+    padding: 1em;
 }
 
-.projects > a + a{ /* Repo */
-    width: 40px;
+.projects > a { /* Live Link & Repo */
+    display: block;
+    margin: 15px 25px;
+    font-size: 16px;
 }
 
 /* Contact Me ____________________________________________ */
