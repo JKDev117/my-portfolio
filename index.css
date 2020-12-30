@@ -170,6 +170,7 @@ main {
 
 header {
     padding: 12vh 25px 0vh;
+    margin-top: 25px;
 } 
 
 header > h1 {
