@@ -232,15 +232,15 @@ h3 {
     cursor: pointer;
 }
 
-#screenshots-proj1:hover{
+.screenshots-proj1:hover{
     border: 3px solid rgb(100, 9, 9);
 }
 
-#screenshots-proj2:hover{
+.screenshots-proj2:hover{
     border: 3px solid rgb(181, 226, 240);
 }
 
-#screenshots-proj3:hover{
+.screenshots-proj3:hover{
     border: 3px solid rgb(221, 206, 174);
 }
 
